@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/containerImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+            <SurfaceView
+                android:id="@+id/surfaceView1"
+                android:layout_width="640px"
+                android:layout_height="480px"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/surfaceView1"
+                android:layout_alignLeft="@+id/surfaceView1"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/mark3" />
+            
+    </RelativeLayout>
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="right|center_vertical"
+       android:background="@drawable/camera" />
+   
+</FrameLayout>
